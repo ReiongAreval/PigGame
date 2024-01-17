@@ -60,7 +60,7 @@ function switchPlayers(){
 function addToHoldScore(){
     scoreHolder[currentPlayer] += currentScore;
     document.getElementById(`score--${currentPlayer}`).textContent=scoreHolder[currentPlayer];
-    if (scoreHolder[currentPlayer] >= 10){
+    if (scoreHolder[currentPlayer] >= 20){
         document.querySelector(`.player--${currentPlayer}`).classList.add(`player--winner`);
         currentScore=0;
         document.getElementById(`current--${currentPlayer}`).textContent=currentScore;
